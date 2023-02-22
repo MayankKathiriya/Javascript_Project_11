@@ -1,0 +1,35 @@
+<table border="1">
+    <tr>
+        <td>name :- </td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>email :- </td>
+        <td><input type="text" id="email"></td>
+    </tr>
+    <tr>
+        <td><input type="button" id="btn" onclick="save()" value="submit"></td>
+    </tr>
+    
+</table>
+<script type="text/javascript">
+
+    let data = [];
+
+   function save(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    let obj = {
+        name : name,
+        email : email
+    }
+    data.push(obj)
+    console.log(name);
+    console.log(email);
+
+   }
+
+
+
+</script>
